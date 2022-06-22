@@ -26,7 +26,6 @@ class Login extends React.Component {
     if (password.length >= MIN_LENGHT && EMAIL_VALIDO.test(email)) {
       this.setState({ buttonDisabled: false });
     } else this.setState({ buttonDisabled: true });
-    // console.log('enable');
   }
 
   clickLogin = () => {
