@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Login.css';
 import { connect } from 'react-redux';
 import { login } from '../actions';
 // import { Redirect } from 'react-router-dom';
@@ -38,7 +37,7 @@ class Login extends React.Component {
   render() {
     const { buttonDisabled, email, password } = this.state;
     return (
-      <div>
+      <div className="login">
         <form>
           <input
             name="email"
