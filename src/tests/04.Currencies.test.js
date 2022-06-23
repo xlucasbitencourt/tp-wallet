@@ -19,7 +19,7 @@ describe('4 - Implemente a lógica para armazenar no estado global as siglas das
   afterEach(() => jest.clearAllMocks());
   
   test('Os valores da chave currencies no estado global devem ser puxados através de uma requisição à API', async () => {
-    const mockedExchange = jest.spyOn(global, 'fetch').mockImplementation(() => apiResponse);
+   // const mockedExchange = jest.spyOn(global, 'fetch').mockImplementation(() => apiResponse);
     const { store } = renderWithRouterAndStore(<Wallet />, '/carteira');
     
 
