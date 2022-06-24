@@ -9,3 +9,11 @@
 .header span {
   margin: 0 10px;
 }
+
+.expenses {
+  margin: 2%;
+}
+
+.expenses label {
+  margin: 5px 10px;
+}
