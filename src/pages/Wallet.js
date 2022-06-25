@@ -23,10 +23,6 @@ class Wallet extends React.Component {
   }
 }
 
-// const mapDispatchToProps = {
-//   currencies: fetchCurrencies,
-// };
-
 Wallet.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
