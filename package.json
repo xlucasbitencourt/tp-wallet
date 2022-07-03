@@ -11,6 +11,7 @@
     "@testing-library/react": "10.0.4",
     "@testing-library/user-event": "7.2.1",
     "bootstrap": "4.5.2",
+    "gh-pages": "^4.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "3.11.0",
@@ -22,6 +23,7 @@
     "redux-thunk": "2.3.0",
     "stylelint-order": "4.1.0"
   },
+  "homepage": "https://lucasbitencourt.com.br/tp-wallet",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
