@@ -23,7 +23,6 @@
     "redux-thunk": "2.3.0",
     "stylelint-order": "4.1.0"
   },
-  "homepage": "https://lucasbitencourt.com.br/tp-wallet",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
