@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { login } from '../actions';
-// import { Redirect } from 'react-router-dom';
 
 class Login extends React.Component {
   state = {
@@ -38,24 +37,33 @@ class Login extends React.Component {
     const { buttonDisabled, email, password } = this.state;
     return (
       <div className="login">
-        <form>
-          <input
-            name="email"
-            value={ email }
-            onChange={ this.handleChange }
-            data-testid="email-input"
-            type="email"
-            required
-          />
-          <input
-            name="password"
-            value={ password }
-            onChange={ this.handleChange }
-            data-testid="password-input"
-            type="password"
-            required
-            min="6"
-          />
+        <h1>Wallet</h1>
+        <form className="form-login">
+          <h2>Login</h2>
+          <label className="label-login" htmlFor="email">
+            <span>E-mail: </span>
+            <input
+              name="email"
+              value={ email }
+              onChange={ this.handleChange }
+              data-testid="email-input"
+              type="email"
+              required
+            />
+          </label>
+          <label className="label-login" htmlFor="password">
+            <span>Senha: </span>
+            <input
+              name="password"
+              value={ password }
+              onChange={ this.handleChange }
+              data-testid="password-input"
+              type="password"
+              required
+              min="6"
+            />
+          </label>
+          <br />
           <button
             onClick={ this.clickLogin }
             type="button"

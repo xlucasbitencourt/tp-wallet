@@ -1,5 +1,52 @@
-.login {
-  margin: 10% 50%;
+:root {
+  --color-primary: #241d60;
+  --color-secundary: #d50000;
+  --color-white: #fffafa;
+  --color-dark: #24292f;
+}
+
+body {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-login {
+  background-color: var(--color-secundary);
+  border-radius: 20px;
+  padding: 2rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-login h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-login button {
+  width: 50%;
+  height: 2rem;
+  margin: auto;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.label-login {
+  display: flex;
+  justify-content: space-around;
+  margin: 1% 0;
+}
+
+.label-login span {
+  width: 80px;
 }
 
 .header {
