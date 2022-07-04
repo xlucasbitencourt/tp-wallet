@@ -49,6 +49,7 @@ class Login extends React.Component {
               data-testid="email-input"
               type="email"
               required
+              placeholder="Digite seu e-mail..."
             />
           </label>
           <label className="label-login" htmlFor="password">
@@ -61,6 +62,7 @@ class Login extends React.Component {
               type="password"
               required
               min="6"
+              placeholder="Digite sua senha..."
             />
           </label>
           <br />

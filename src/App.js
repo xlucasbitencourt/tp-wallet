@@ -4,11 +4,22 @@ import Login from './pages/Login';
 import Wallet from './pages/Wallet';
 
 function App() {
+  const link = <a href="https://lucasbitencourt.com.br/">Lucas Btencourt</a>;
   return (
-    <Switch>
-      <Route path="/carteira" component={ Wallet } />
-      <Route exact path="/" component={ Login } />
-    </Switch>
+    <>
+      <div className="main-header">
+        <p>
+          Projeto feito por
+          {' '}
+          {link}
+        </p>
+      </div>
+      <Switch>
+        <Route path="/carteira" component={ Wallet } />
+        <Route exact path="/" component={ Login } />
+      </Switch>
+    </>
+
   );
 }
 
