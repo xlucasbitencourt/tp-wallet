@@ -1,8 +1,10 @@
 :root {
   --color-primary: #241d60;
   --color-secundary: #d50000;
+  --color-secundary-transparency: rgba(213, 0, 0, 0.5);
   --color-white: #fffafa;
   --color-dark: #24292f;
+  --box-default: #00000066 0px 2px 4px, #0000004d 0px 7px 13px -3px, #00000033 0px -3px 0px inset;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 .main-header {
-  background-color: var(--color-secundary);
+  background-color: var(--color-dark);
   margin-top: -16px;
   text-align: center;
   line-height: 50px;
@@ -38,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: var(--box-default)
 }
 
 .form-login h2 {
@@ -77,11 +79,47 @@ body {
 /* Aqui acaba página login */
 
 .header {
-  margin: 2%;
+  background-color: var(--color-secundary);
+  height: 50px;
 }
 
 .header span {
   margin: 0 10px;
+}
+
+.expenses-list::before {
+  width: 100%;
+  display: block;
+  content: '';
+  border: 1px solid var(--color-secundary);
+  margin-top: 20px;
+}
+
+.expenses-list h2 {
+  text-align: center;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.expense-mobile {
+  background-color: var(--color-secundary-transparency);
+  font-size: 20px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  box-shadow: var(--box-default)
+}
+
+.expense-mobile button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 25px;
 }
 
 .expenses {
@@ -94,6 +132,7 @@ body {
 
 table {
   width: 100%;
+  display: none;
 }
 
 table, th, td {
@@ -101,3 +140,12 @@ table, th, td {
   border-collapse: collapse;
 }
 
+@media screen and (orientation: landscape) {
+  .expenses-list {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+}
