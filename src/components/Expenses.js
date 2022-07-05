@@ -40,7 +40,7 @@ class Expenses extends Component {
     return (
       <div className="expenses">
         <label htmlFor="value">
-          <span>Valor</span>
+          <span>Valor: </span>
           <input
             data-testid="value-input"
             type="number"
@@ -50,7 +50,7 @@ class Expenses extends Component {
           />
         </label>
         <label htmlFor="description">
-          <span>Descrição</span>
+          <span>Descrição: </span>
           <input
             data-testid="description-input"
             name="description"
@@ -59,7 +59,7 @@ class Expenses extends Component {
           />
         </label>
         <label htmlFor="currency">
-          <span>Moeda</span>
+          <span>Moeda: </span>
           <select
             name="currency"
             id="currency"
@@ -74,7 +74,7 @@ class Expenses extends Component {
           </select>
         </label>
         <label htmlFor="method">
-          <span>Pagamento</span>
+          <span>Pagamento: </span>
           <select
             data-testid="method-input"
             name="method"
@@ -88,7 +88,7 @@ class Expenses extends Component {
           </select>
         </label>
         <label htmlFor="tag">
-          <span>Categoria</span>
+          <span>Categoria: </span>
           <select
             data-testid="tag-input"
             name="tag"
@@ -103,7 +103,13 @@ class Expenses extends Component {
             <option value="Saúde">Saúde</option>
           </select>
         </label>
-        <button type="button" onClick={ this.buttonAddExpense }>Adicionar despesa</button>
+        <button
+          className="main-button"
+          type="button"
+          onClick={ this.buttonAddExpense }
+        >
+          Adicionar despesa
+        </button>
       </div>
     );
   }

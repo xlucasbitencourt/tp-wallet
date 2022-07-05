@@ -17,7 +17,7 @@ class TableExpenses extends Component {
           <thead>
             <tr>
               <th>Descrição</th>
-              <th>Tag</th>
+              <th>Categoria</th>
               <th>Método de pagamento</th>
               <th>Valor</th>
               <th>Moeda</th>
@@ -64,7 +64,7 @@ class TableExpenses extends Component {
                 <span className="title">Descrição: </span>
                 <span>{it.description}</span>
                 <br />
-                <span className="title">Tag: </span>
+                <span className="title">Categoria: </span>
                 <span>{it.tag}</span>
                 <br />
                 <span className="title">Método de pagamento: </span>
@@ -86,6 +86,7 @@ class TableExpenses extends Component {
                 <span>Real</span>
                 <br />
                 <button
+                  className="main-button"
                   type="button"
                   onClick={ () => this.delete(expenses, it.id) }
                 >
