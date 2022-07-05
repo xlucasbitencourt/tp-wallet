@@ -24,7 +24,7 @@ class TableExpenses extends Component {
               <th>Câmbio utilizado</th>
               <th>Valor convertido</th>
               <th>Moeda de conversão</th>
-              <th>Editar/Excluir</th>
+              <th>Excluir</th>
             </tr>
           </thead>
           <tbody>
@@ -61,6 +61,11 @@ class TableExpenses extends Component {
           {
             expenses.map((it) => (
               <div className="expense-mobile" key={ it.id }>
+                <p>
+                  Despesa
+                  {' '}
+                  { it.id + 1 }
+                </p>
                 <span className="title">Descrição: </span>
                 <span>{it.description}</span>
                 <br />
