@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tp-wallet/static/css/main.32118899.chunk.css",
-    "main.js": "/tp-wallet/static/js/main.038f1972.chunk.js",
-    "main.js.map": "/tp-wallet/static/js/main.038f1972.chunk.js.map",
+    "main.css": "/tp-wallet/static/css/main.9176dba1.chunk.css",
+    "main.js": "/tp-wallet/static/js/main.46058242.chunk.js",
+    "main.js.map": "/tp-wallet/static/js/main.46058242.chunk.js.map",
     "runtime-main.js": "/tp-wallet/static/js/runtime-main.b9409663.js",
     "runtime-main.js.map": "/tp-wallet/static/js/runtime-main.b9409663.js.map",
     "static/js/2.d8409a91.chunk.js": "/tp-wallet/static/js/2.d8409a91.chunk.js",
     "static/js/2.d8409a91.chunk.js.map": "/tp-wallet/static/js/2.d8409a91.chunk.js.map",
     "index.html": "/tp-wallet/index.html",
-    "static/css/main.32118899.chunk.css.map": "/tp-wallet/static/css/main.32118899.chunk.css.map",
+    "static/css/main.9176dba1.chunk.css.map": "/tp-wallet/static/css/main.9176dba1.chunk.css.map",
     "static/js/2.d8409a91.chunk.js.LICENSE.txt": "/tp-wallet/static/js/2.d8409a91.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b9409663.js",
     "static/js/2.d8409a91.chunk.js",
-    "static/css/main.32118899.chunk.css",
-    "static/js/main.038f1972.chunk.js"
+    "static/css/main.9176dba1.chunk.css",
+    "static/js/main.46058242.chunk.js"
   ]
 }
