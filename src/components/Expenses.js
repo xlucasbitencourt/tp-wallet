@@ -22,6 +22,8 @@ class Expenses extends Component {
     const { expenseId, dispatch } = this.props;
     const { value, description, currency, method, tag } = this.state;
 
+    if (!value) return;
+
     dispatch(newExpense({
       id: expenseId,
       value,
@@ -119,8 +121,6 @@ const mapStateToProps = (state) => ({
   currencies: state.wallet.currencies,
   expenseId: state.wallet.expenses.length,
 });
-
-// const mapDispatchToProps = {}
 
 Expenses.propTypes = {
   currencies: PropTypes.arrayOf(PropTypes.string).isRequired,

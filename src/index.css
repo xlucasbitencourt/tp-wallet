@@ -81,10 +81,12 @@ body {
 .header {
   background-color: var(--color-secundary);
   height: 50px;
+  display: flex;
 }
 
 .header span {
-  margin: 0 10px;
+  line-height: 50px;
+  margin: 0 5px;
 }
 
 .expenses {

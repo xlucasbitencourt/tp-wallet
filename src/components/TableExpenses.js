@@ -5,8 +5,8 @@ import { updateDelete } from '../actions';
 
 class TableExpenses extends Component {
   delete = (expense, id) => {
-    const { delExp } = this.props;
-    delExp(expense, id);
+    const { dispatch } = this.props;
+    dispatch(updateDelete(expense, id));
   }
 
   render() {
@@ -111,13 +111,9 @@ const mapStateToProps = (state) => ({
   newExpenses: state.wallet,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  delExp: (expenses, id) => { dispatch(updateDelete(expenses, id)); },
-});
-
 TableExpenses.propTypes = {
   expenses: PropTypes.arrayOf(PropTypes.object).isRequired,
-  delExp: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TableExpenses);
+export default connect(mapStateToProps)(TableExpenses);

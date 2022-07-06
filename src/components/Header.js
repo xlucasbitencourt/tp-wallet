@@ -17,7 +17,11 @@ class Header extends Component {
     return (
       <div className="header">
         <span data-testid="email-field">{email}</span>
-        <span data-testid="total-field">{ this.updateTotal().toFixed(2)}</span>
+        <span data-testid="total-field">
+          Total:
+          {' '}
+          { this.updateTotal().toFixed(2)}
+        </span>
         <span data-testid="header-currency-field">BRL</span>
       </div>
     );
