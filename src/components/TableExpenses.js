@@ -29,8 +29,8 @@ class TableExpenses extends Component {
           </thead>
           <tbody>
             {
-              expenses.map((item) => (
-                <tr key={ item.id }>
+              expenses.map((item, index) => (
+                <tr key={ index }>
                   <td>{item.description}</td>
                   <td>{item.tag}</td>
                   <td>{item.method}</td>
@@ -59,12 +59,12 @@ class TableExpenses extends Component {
         <div className="expenses-list">
           <h2>Despesas</h2>
           {
-            expenses.map((it) => (
-              <div className="expense-mobile" key={ it.id }>
+            expenses.map((it, index) => (
+              <div className="expense-mobile" key={ index }>
                 <p>
                   Despesa
                   {' '}
-                  { it.id + 1 }
+                  { index + 1 }
                 </p>
                 <span className="title">Descrição: </span>
                 <span>{it.description}</span>
